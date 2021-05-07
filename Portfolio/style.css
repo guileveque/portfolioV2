@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Yeseva+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F4EFE2;
+}
+html{
+  background-color: #F4EFE2;
+}
+
+.header{
+  
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    width: 98%;
+    font-family: 'Unlock', cursive;
+    border: 2px solid black;
+    margin-left: 1%;
+    background-color: #F4EFE2;
+}
+
+.slide-bar{
+  width: 12rem;
+  height: 90vh;
+  border: 2px solid black;
+  z-index: 1;
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  left: 1%;
+}
+
+.icons1 {
+  margin-top: 5rem;
+}
+
+.home{
+  padding-top: 10vh;
+  font-size: 10em;
+}
+
+.subtitle-home {
+  padding-top: 7vh;
+  font-size: 2.5em;
+  text-align: center;
+  margin: auto;
+}
+.epitech {
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    font-size: 4em;
+  }
+  .subtitle-home{
+    font-size: 1.3em;
+  }
+  .header{
+    font-size: small;
+    width: 100%;
+    margin-left: 0;
+    border: none;
+  }
+  .header-right{
+    margin-right: 1rem;
+  }
+}
+
+.guillaume {
+  text-align: center;
+  color: black;
+
+  font-family: 'Black Ops One', cursive;
+
+}
+
+.header-left {
+    /*flex-basis: calc(100% / 3);*/
+    text-align: left;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    width: 70px;
+}
+
+.header-left > p {
+  margin-left: 0.7rem;
+}
+
+
+.header-center {
+    /*flex-basis: calc(100% / 3);*/
+    text-align: center;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    width: auto;
+
+}
+.header-right {
+    /*flex-basis: calc(100% / 3);*/
+    text-align: right;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    width: auto;
+
+}
+
+
+.dots ul {
+    left:90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:2;
+    position:fixed;
+  }
+  
+  .dots ul li {
+    list-style-type:none;
+    font-size:40px;
+  }
+  
+  .dots ul li a {
+    color:gray;
+    transition:0.5s;
+    
+  }
+  .dots ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  
+  .dots ul li a:focus, .dots ul li a:active {
+    text-decoration:none;
+    color:white;
+  }
+  
+#section-one_h2{
+  margin-left: 40%;
+}
+
+  .background-one {
+    background-color: blue;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top: 100%;
+  }
+  #section-one {
+    padding-top: 70px;
+  }
+  .background-two {
+    background-color:rgba(96, 60, 93, 1);
+    top:200%;
+    height:100%;
+    width:100vw;
+    position:absolute;
+    margin: 0;
+  }
+  #section-two {
+    padding-top:50px;
+    margin-bottom:550px;
+  }
+  .background-three {
+    background-color:rgba(114, 112, 192, 1);
+    top:300%;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  #section-three {
+    padding-top:50px;
+    margin-bottom:550px;
+  }
+
+#page-wrap {
+  width: 80%;
+  height: 60vh;
+  overflow: hidden;
+  margin-left: 20%;
+}
+
+
+/*** canvas ***/
+
+#canvas {
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  z-index: 1;
+}
+
+
+
+
+.curtain {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.curtain canvas {
+  display: none;
+}
+
+
+/*-----------------------*/
+
+.sticky {
+  position: sticky;
+  top: 300px; /* adjust sentinel height/positioning based on this position. */
+  height: var(--header-height);
+  padding: 0 var(--default-padding);
+}
+.sticky_sentinel {
+  position: absolute;
+  left: 0;
+  right: 0; /* needs dimensions */
+  visibility: hidden;
+}
+.sticky_sentinel--top {
+  /* Adjust the height and top values based on your on your sticky top position.
+  e.g. make the height bigger and adjust the top so observeHeaders()'s
+  IntersectionObserver fires as soon as the bottom of the sentinel crosses the
+  top of the intersection container. */
+  height: 40px;
+  top: -24px;
+}
+.sticky_sentinel--bottom {
+  /* Height should match the top of the header when it's at the bottom of the
+  intersection container. */
+  height: calc(var(--header-height) + var(--default-padding));
+  bottom: 0;
+}
