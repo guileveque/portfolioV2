@@ -10,6 +10,8 @@
     "vite": "^2.2.3"
   },
   "dependencies": {
-    "curtainsjs": "^8.1.2"
+    "curtainsjs": "^8.1.2",
+    "gsap": "^3.6.1",
+    "scrollmagic": "^2.0.8"
   }
 }

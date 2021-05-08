@@ -9,14 +9,14 @@ sr.reveal('#section-one', {
 
 sr.reveal('#section-two', {
     origin: 'left',
-    distance: '50px',
+    distance: '200px',
     duration: 2000,
     reset: true
 });
 
 sr.reveal('#section-three', {
     origin: 'left',
-    distance: '50px',
+    distance: '200px',
     duration: 2000,
     reset: true
 });
