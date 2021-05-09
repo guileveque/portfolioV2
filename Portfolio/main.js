@@ -57,10 +57,10 @@ window.addEventListener("load", () => {
         // draw a red rectangle
         simpleCanvasContext.fillStyle = "black";
         //simpleCanvasContext.fillRect(simpleCanvas.width / 2 - simpleCanvas.width / 8, simpleCanvas.height / 2 - simpleCanvas.height / 8, simpleCanvas.width / 4, simpleCanvas.height / 4);
-        simpleCanvasContext.font = "10vw serif";
+        simpleCanvasContext.font = "12vw serif";
         simpleCanvasContext.textAlign="center";
         simpleCanvasContext.fillText("LEVEQUE", simpleCanvas.width / 2, simpleCanvas.height - 450);
-        simpleCanvasContext.fillText("GUILLAUME", simpleCanvas.width / 2, simpleCanvas.height - 300);
+        simpleCanvasContext.fillText("GUILLAUME", simpleCanvas.width / 2, simpleCanvas.height - 270);
 
     }
 

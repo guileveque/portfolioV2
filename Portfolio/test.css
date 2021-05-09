@@ -1,0 +1,100 @@
+.header{
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 98%;
+  font-family: 'Unlock', cursive;
+  /*border: 2px solid black;*/
+  margin-left: 1%;
+  background-color: transparent;
+}
+
+.header-left {
+  /*flex-basis: calc(100% / 3);*/
+  text-align: left;
+  padding-bottom: 0.9em;
+  width: auto;
+}
+
+
+
+
+.header-center {
+  /*flex-basis: calc(100% / 3);*/
+  text-align: center;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  width: auto;
+
+}
+.header-right {
+  /*flex-basis: calc(100% / 3);*/
+  text-align: right;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  width: auto;
+
+}
+.container-about{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#about_text{
+  padding-top: 30%;
+}
+
+
+
+
+.slide-bar{
+  margin-top: 10%;
+    width: 20rem;
+    height: 103h;
+    z-index: 1;
+    font-size: x-large;
+    /*position: absolute;*/
+    top: 0;
+    left: 1%;
+    border: black 2px solid;
+}
+.no-sticky{
+    padding-top: 15%;
+    height: auto;
+}
+
+.sticky {
+    position: sticky;
+    top: 100px;
+    height: var(--header-height);
+    padding: 0 var(--default-padding);
+}
+
+.sticky_sentinel {
+    position: absolute;
+    left: 0;
+    right: 0; /* needs dimensions */
+    visibility: hidden;
+  }
+  .sticky_sentinel--top {
+    /* Adjust the height and top values based on your on your sticky top position.
+    e.g. make the height bigger and adjust the top so observeHeaders()'s
+    IntersectionObserver fires as soon as the bottom of the sentinel crosses the
+    top of the intersection container. */
+    height: 400px;
+    top: -24px;
+  }
+  .sticky_sentinel--bottom {
+    /* Height should match the top of the header when it's at the bottom of the
+    intersection container. */
+    height: 100px;
+    bottom: 0;
+  }
+
+.gg{
+    height: 500px;
+}

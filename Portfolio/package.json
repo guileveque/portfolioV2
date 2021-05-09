@@ -12,6 +12,8 @@
   "dependencies": {
     "curtainsjs": "^8.1.2",
     "gsap": "^3.6.1",
-    "scrollmagic": "^2.0.8"
+    "imports-loader": "^2.0.0",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   }
 }
