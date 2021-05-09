@@ -1,4 +1,8 @@
-$(function () {
+
+
+
+
+/*$(function () {
     $('a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -11,7 +15,7 @@ $(function () {
             }
         }
     });
-});
+});*/
 
 function observeStickyHeaderChanges(container) {
     observeHeaders(container);
@@ -88,3 +92,4 @@ function addSentinels(container, className) {
     const e = new CustomEvent('sticky-change', {detail: {stuck, target}});
     document.dispatchEvent(e);
 }
+

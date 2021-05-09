@@ -2,6 +2,21 @@ import './style.css'
 
 
 import {Curtains, Plane, Vec2} from 'curtainsjs';
+let color = 'white';
+
+/*-------DARK MODE-------------*/
+
+const chk = document.getElementById('chk');
+let colorChecked = false;
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    if(colorChecked == false){ colorChecked = true}
+    else{colorChecked = false}
+    console.log(colorChecked)
+});
+
+
+
 
 window.addEventListener("load", () => {
     // track the mouse positions to send it to the shaders
@@ -42,7 +57,12 @@ window.addEventListener("load", () => {
         // on context lost, try to restore the context
         curtains.restoreContext();
     });
+    /*-------DARK MODE-------------*/
 
+    if(colorChecked == false){color = "black"}
+    else{color = "white"}
+    
+    
     function animateTextureCanvas() {
         // here we will handle our canvas texture animation
 
@@ -55,7 +75,7 @@ window.addEventListener("load", () => {
         //simpleCanvasContext.translate(-simpleCanvas.width / 2, -simpleCanvas.height / 2);
 
         // draw a red rectangle
-        simpleCanvasContext.fillStyle = "black";
+        simpleCanvasContext.fillStyle = color;
         //simpleCanvasContext.fillRect(simpleCanvas.width / 2 - simpleCanvas.width / 8, simpleCanvas.height / 2 - simpleCanvas.height / 8, simpleCanvas.width / 4, simpleCanvas.height / 4);
         simpleCanvasContext.font = "12vw serif";
         simpleCanvasContext.textAlign="center";
