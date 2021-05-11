@@ -34,7 +34,18 @@ sr.reveal('.subtitle-home', {
     duration: 2000,
     reset: true
 });
-
+sr.reveal('#subtitle-home2', {
+    origin: 'bottom',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+sr.reveal('#subtitle-home3', {
+    origin: 'bottom',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
 sr.reveal('.header-left', {
     origin: 'left',
     distance: '100px',

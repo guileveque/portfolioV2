@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -15,15 +17,17 @@
     <div class="header-left">
       <p><a href="about.html">About</a></p>
     </div>
-    <div>
-      <input type="checkbox" class="checkbox" id="chk" />
-      <label class="label" for="chk">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-        <div class="ball"></div>
-      </label>
+    
+    <div class="header-right">
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
     </div>
-    <div class="header-right"><a href="test.html">Guillaume</a></div>
   </header>
   <div class="home">
     
@@ -34,6 +38,8 @@
       </div>
     </div>
     <div class="subtitle-home">Étudiant à la web@cadémie by {EPITECH}</div>
+    <div id="subtitle-home2">Développeur Web basé à Marseille</div>
+    <div id="subtitle-home3">Full stack junior</div>
     
   </div>
   
@@ -48,14 +54,14 @@
       </nav>
     </div>
   </div>
-  <div class="background-one">
-    <div class="container">
-      <div id="section-one">
-        <h2 id="section-one_h2">Project one</h2>
-        <div id="section_one-div-image">
-          <img id="section_one-image" src="img.png" alt="test image" >
-        </div>
-      </div>
+  <div id="page-wrap2">
+    <div class="text">
+      <h1>Project one</h1><br>
+    </div>
+
+    <div id="canvas2"></div>
+    <div class="curtain2">
+      <img src="img.png" crossorigin="" data-sampler="simplePlaneTexture" />
     </div>
   </div>
   <div class="background-two">
@@ -78,11 +84,18 @@
       </section>
     </div>
   </div>
+  <hr style="width: 80%; margin-left: 10%; margin-top: 5%;">
+  <footer class="footer">
+    <div>Guillaume Portfolio 2021</div>
+    <div> LINKEDIN GITHUB</div>
+    <div>RETOUR EN HAUT</div>
+  </footer>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="JS/scroll.js"></script>
   <script type="module" src="/main.js"></script>
+  <script src="JS/imageCurtain.js" type="module"></script>
 
 </body>
 <script src="JS/index.js"></script>
