@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css" >
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <title>Document</title>
@@ -15,7 +15,7 @@
 
   <header class="header">
     <div class="header-left">
-      <p><a href="about.html">About</a></p>
+      <p><a id="header-left_decoration" href="about.html">About</a></p>
     </div>
     
     <div class="header-right">
@@ -47,9 +47,9 @@
     <div class="container">
       <nav class="dots col-xs-12 col-sm-12 col-md-12 text-right">
         <ul>
-          <li><a href=#section-one>&#9679;</a></li>
-          <li><a href=#section-two>&#9679;</a></li>
-          <li><a href=#section-three>&#9679;</a></li>
+          <li><a href=#page-wrap2>&#9679;</a></li>
+          <li><a href=#page-wrap3>&#9679;</a></li>
+          <li><a href=#page-wrap4>&#9679;</a></li>
         </ul>
       </nav>
     </div>
@@ -61,44 +61,50 @@
 
     <div id="canvas2"></div>
     <div class="curtain2">
-      <img src="img.png" crossorigin="" data-sampler="simplePlaneTexture" />
+      <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
     </div>
   </div>
-  <div class="background-two">
-    <div class="container">
-      <section id="section-two">
-        <h2 id="section-two_h2">project two</h2>
-        <div id="section_one-div-image">
-          <img id="section_one-image" src="img.png" alt="test image" >
-        </div>
-      </section>
+  <div id="page-wrap3">
+    <div class="text">
+      <h1>Project two</h1><br>
+    </div>
+
+    <div id="canvas3"></div>
+    <div class="curtain3">
+      <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
     </div>
   </div>
-  <div class="background-three">
-    <div class="container">
-      <section id="section-three">
-        <h2 id="section-three_h2">Project three</h2>
-        <div id="section_one-div-image">
-          <img id="section_one-image" src="img.png" alt="test image" >
-        </div>
-      </section>
+  <div id="page-wrap4">
+    <div class="text">
+      <h1>Project three</h1><br>
     </div>
+
+    <div id="canvas4"></div>
+    <div class="curtain4">
+      <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
+    </div>
+  </div>
+  <div class="other_project">
+    <div>hello</div>
+    <div>hellop</div>
+    <div>helloo</div>
+    <div>hheloo</div>
   </div>
   <hr style="width: 80%; margin-left: 10%; margin-top: 5%;">
   <footer class="footer">
     <div>Guillaume Portfolio 2021</div>
-    <div> LINKEDIN GITHUB</div>
+    <div> LINKEDIN . . . . . . . GITHUB</div>
     <div>RETOUR EN HAUT</div>
   </footer>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  <script src="JS/scroll.js"></script>
-  <script type="module" src="/main.js"></script>
-  <script type="module" src="JS/imageCurtain.js"></script>
+  <script src="curtains.umd.min.js"></script>
+  <script src="JS/scroll.js" crossorigin="anonymous"></script>
+  <script type="module" src="JS/main.js" crossorigin="anonymous"></script>
+  <script type="module" src="JS/imageCurtain.js" crossorigin="anonymous"></script>
 
 </body>
 <script src="JS/index.js"></script>
 
 </html>
-

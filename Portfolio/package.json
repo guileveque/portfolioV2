@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.2.3"
+    "vite": "^2.3.1"
   },
   "dependencies": {
     "curtainsjs": "^8.1.2",

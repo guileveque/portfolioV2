@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Yeseva+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /*margin: 0;
+    width: 100vw;
+    height: 100vh;*/
+    background-color: #F4EFE2;
+    transition: background-color 0.5s linear;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+/*html{
+  background-color: #F4EFE2;
+}*/
+
+body.dark{
+  background-color: #A1BBC2;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+  margin-top: 10px;
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 17px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.header{
+  
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    width: 98%;
+    /*border: 2px solid black;*/
+    margin-left: 1%;
+    background-color: transparent;
+}
+
+.slide-bar{
+  width: 12rem;
+  height: 90vh;
+  z-index: 1;
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  left: 1%;
+}
+
+.icons1 {
+  margin-top: 5rem;
+}
+
+.home{
+  padding-top: 10vh;
+}
+
+.subtitle-home {
+  margin-left: 40%;
+  font-size: 3vw;
+}
+#subtitle-home2 {
+  margin-left: 50%;
+  font-size: 3vw;
+}
+#subtitle-home3 {
+  margin-left: 76%;
+  font-size: 3vw;
+}
+
+.epitech {
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    font-size: 4em;
+  }
+  
+  .header{
+    font-size: small;
+    width: 100%;
+    margin-left: 0;
+    border: none;
+  }
+  .header-right{
+    margin-right: 1rem;
+  }
+}
+
+.guillaume {
+  text-align: center;
+  color: black;
+
+  font-family: 'Black Ops One', cursive;
+
+}
+
+
+
+.header-left {
+    /*flex-basis: calc(100% / 3);*/
+    text-align: left;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    width: 90px;
+}
+#header-left_decoration{
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+#header-left_decoration:hover{
+  border-bottom: 1px solid black;
+}
+
+.header-left > p {
+  margin-left: 0.7rem;
+}
+
+
+.header-center {
+    /*flex-basis: calc(100% / 3);*/
+    text-align: center;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    width: auto;
+
+}
+.header-right {
+    /*flex-basis: calc(100% / 3);*/
+    text-align: right;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    width: auto;
+
+}
+
+
+.dots ul {
+    left:97%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:2;
+    position:fixed;
+  }
+  
+  .dots ul li {
+    list-style-type:none;
+    font-size:40px;
+  }
+  
+  .dots ul li a {
+    color:gray;
+    transition:0.5s;
+    
+  }
+  .dots ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  
+  .dots ul li a:focus, .dots ul li a:active {
+    text-decoration:none;
+    color:white;
+  }
+  
+
+
+
+
+#section_one-div-image{
+  display: flex;
+  justify-content: center;
+}
+#section_one-text{
+  display: flex;
+  justify-content: center;
+}
+
+
+  #section-one {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #section-two {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #section-three {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+#page-wrap {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+
+/*** canvas ***/
+
+#canvas {
+  height: 90vh;
+  width: 100vw;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  z-index: 1;
+}
+
+
+
+
+.curtain {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.curtain canvas {
+  display: none;
+}
+
+#hr{
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 8%;
+  margin-top: 3%;
+}
+
+.footer > div {
+  padding-bottom: 3%;
+}
+
+/*------------------IMAGE CURTAIN ----------*/
+
+#page-wrap2 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*** canvas ***/
+
+#canvas2 {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.curtain2 {
+  position: absolute;
+  top: 105%;
+  right: 15%;
+  bottom: -105%;
+  left: 15%;
+}
+
+.curtain2 img {
+  display: none;
+}
+
+/*-----------------IMAGE CURTAIN 3 ---------*/
+
+#page-wrap3 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*** canvas ***/
+
+#canvas3 {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.curtain3 {
+  position: absolute;
+  top: 205%;
+  right: 15%;
+  bottom: -205%;
+  left: 15%;
+}
+
+.curtain3 img {
+  display: none;
+}
+
+/*-----------------IMAGE CURTAIN 4 ---------*/
+
+#page-wrap4 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*** canvas ***/
+
+#canvas4 {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.curtain4 {
+  position: absolute;
+  top: 315%;
+  right: 15%;
+  bottom: -315%;
+  left: 15%;
+}
+
+.curtain4 img {
+  display: none;
+}
