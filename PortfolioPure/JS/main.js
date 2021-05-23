@@ -1,18 +1,10 @@
 
 
 //import {Curtains, Plane, Vec2} from '../index.mjs';
-let color = 'white';
+let color = 'black';
 
 /*-------DARK MODE-------------*/
 
-const chk = document.getElementById('chk');
-let colorChecked = false;
-chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-    if(colorChecked == false){ colorChecked = true}
-    else{colorChecked = false}
-    console.log(colorChecked)
-});
 
 
 
@@ -58,8 +50,7 @@ window.addEventListener("load", () => {
     });
     /*-------DARK MODE-------------*/
 
-    if(colorChecked == false){color = "black"}
-    else{color = "white"}
+    
     
     
     function animateTextureCanvas() {
@@ -102,7 +93,7 @@ window.addEventListener("load", () => {
             // get the distance between our vertex and the mouse position
             float distanceFromMouse = distance(uMousePosition, vec2(vertexPosition.x, vertexPosition.y));
             // calculate our wave effect
-            float waveSinusoid = cos(5.0 * (distanceFromMouse - (uTime / 75.0)));
+            float waveSinusoid = cos(4.0 * (distanceFromMouse - (uTime / 75.0)));
             // attenuate the effect based on mouse distance
             float distanceStrength = (0.4 / (distanceFromMouse + 0.4));
             // calculate our distortion effect

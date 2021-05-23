@@ -17,6 +17,16 @@
     });
 });*/
 
+const chk = document.getElementById('chk');
+let colorChecked = false;
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    if(colorChecked == false){ colorChecked = true}
+    else{colorChecked = false}
+    console.log(colorChecked)
+});
+
+
 function observeStickyHeaderChanges(container) {
     observeHeaders(container);
     observeFooters(container);

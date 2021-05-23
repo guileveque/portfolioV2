@@ -5,55 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/about.css">
+    <link rel="stylesheet" href="assets/loader.css">
     <title>Document</title>
 </head>
 <body>
+  <div class="lds-ripple"><div></div><div></div></div>
     <header class="header">
         <div class="header-left">
-          <p><a href="about.html">About</a></p>
+          <p><a id="header-left_decoration" href="index.html">Index</a></p>
         </div>
-       
+        
         <div class="header-right">
-            <div>
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
-            </div>
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
         </div>
       </header>
     <div class="container-about">
         <div class="slide-bar">
             <div class="sticky"><img src="img.png" height="350" width="300"></div>
             <div class="no-sticky">
-                <img src="img2.png" height="350" width="300">
+                <img src="img.png" height="350" width="300">
             </div>
         </div>
         <div id="about_text">
-            <h1>About</h1>
+            <h1 id="title-about">About</h1>
             <div>Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Minus excepturi expedita nemo, ipsum dolorum <br>sequi ab eveniet totam commodi. Id eum enim dolorem perspiciatis natus voluptatem fuga voluptas, nemo impedit!</div>
             <div id="skills">
-                <h1 id="">HARD SKILLS</h1>
-                <div id="">hard skill </div>
-                <h1 id="">SOFT SKILLS</h1>
-                <div id="">soft skills</div>
+                <h1 id="hard_skills_title">HARD SKILLS</h1>
+                <div id="hard_skills">hard skill </div>
+                <h1 id="soft_skills_title">SOFT SKILLS</h1>
+                <div id="soft_skills">soft skills</div>
             </div>
         </div>
     </div>
-    <div class="gg">dgvdj</div>
-    <div class="gg">dgvdj</div>
-    <div class="gg">dgvdj</div>
-    <script>
-        const chk = document.getElementById('chk');
-let colorChecked = false;
-chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
     
-});
-    </script>
+    <hr style="width: 80%; margin-left: 10%; margin-top: 5%;">
+  <footer class="footer">
+    <div>Guillaume Portfolio 2021</div>
+    <div> LINKEDIN . . . . . . . GITHUB</div>
+    <div>RETOUR EN HAUT</div>
+  </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="JS/scroll.js" crossorigin="anonymous"></script>
     <script src="JS/index.js"></script>
 </body>
+<script>
+  $( document ).ready(function(){
+     $('.lds-ripple').hide();/*je cache le loader après le chargement de la page*/
+  });
+</script>
+
 </html>

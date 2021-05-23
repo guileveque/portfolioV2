@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css" >
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="assets/loader.css">
 <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-
+  <div class="lds-ripple"><div></div><div></div></div>
   <header class="header">
     <div class="header-left">
       <p><a id="header-left_decoration" href="about.html">About</a></p>
@@ -60,9 +61,10 @@
     </div>
 
     <div id="canvas2"></div>
-    <div class="curtain2">
+    <a href="./Projets/projet1.html">
+      <div class="curtain2">
       <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
-    </div>
+    </div></a>
   </div>
   <div id="page-wrap3">
     <div class="text">
@@ -70,9 +72,11 @@
     </div>
 
     <div id="canvas3"></div>
-    <div class="curtain3">
-      <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
-    </div>
+    <a href="./Projets/projet2.html">
+      <div class="curtain3">
+        <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
+      </div>
+    </a>
   </div>
   <div id="page-wrap4">
     <div class="text">
@@ -80,15 +84,29 @@
     </div>
 
     <div id="canvas4"></div>
-    <div class="curtain4">
-      <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
-    </div>
+    <a href="./Projets/projet3.html">
+      <div class="curtain4">
+        <img src="img.png" crossorigin="anonymous" data-sampler="simplePlaneTexture" />
+      </div>
+    </a>
   </div>
   <div class="other_project">
-    <div>hello</div>
-    <div>hellop</div>
-    <div>helloo</div>
-    <div>hheloo</div>
+    <div>
+      <div class="hidden-text">Project for</div>
+      <span class="hidden-img"><img id="image-dimension" src="img.png"></span>
+    </div>
+    <div>
+      <div class="hidden-text">Project five</div>
+      <span class="hidden-img"><img id="image-dimension" src="img.png"></span>
+    </div>
+    <div>
+      <div class="hidden-text">Project six</div>
+      <span class="hidden-img"><img id="image-dimension" src="img.png"></span>
+    </div>
+    <div>
+      <div class="hidden-text">Project seven</div>
+      <span class="hidden-img"><img id="image-dimension" src="img.png"></span>
+    </div>
   </div>
   <hr style="width: 80%; margin-left: 10%; margin-top: 5%;">
   <footer class="footer">
@@ -103,8 +121,15 @@
   <script src="JS/scroll.js" crossorigin="anonymous"></script>
   <script type="module" src="JS/main.js" crossorigin="anonymous"></script>
   <script type="module" src="JS/imageCurtain.js" crossorigin="anonymous"></script>
+  <script src="JS/index.js"></script>
+  
 
 </body>
-<script src="JS/index.js"></script>
+<script>
+  $( document ).ready(function(){
+     $('.lds-ripple').hide();/*je cache le loader après le chargement de la page*/
+  });
+</script>
+
 
 </html>

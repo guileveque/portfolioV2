@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Yeseva+One&display=swap');
+/*
+phto des projets
+link tout les liens
+contenue des projets
+photo du about
+
+*/
+
+
 *{
     padding: 0;
     margin: 0;
@@ -77,15 +86,7 @@ body.dark{
     background-color: transparent;
 }
 
-.slide-bar{
-  width: 12rem;
-  height: 90vh;
-  z-index: 1;
-  font-size: x-large;
-  position: absolute;
-  top: 0;
-  left: 1%;
-}
+
 
 .icons1 {
   margin-top: 5rem;
@@ -127,6 +128,12 @@ body.dark{
   }
   .header-right{
     margin-right: 1rem;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .footer > div {
+    text-align: center;
   }
 }
 
@@ -278,20 +285,52 @@ body.dark{
   display: none;
 }
 
-#hr{
+
+
+.other_project{
+  margin-left: 60%;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  display: block;
+  width: 25%;
 }
 
+.other_project > div{
+  text-align: right;
+  padding-bottom: 1%;
+  font-size: 3.5vw;
+  border-bottom: solid 1px black ;
+}
+
+
+.hidden-img{
+  position: absolute;
+  right: 35%;
+  display: none;
+  opacity: 0.6;
+}
+
+#image-dimension{
+  width: 40%;
+  height: 50%;
+}
+.hidden-text:hover ~ .hidden-img {
+  display: block;
+  position: absolute;
+    z-index: 2
+}
 .footer{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
   height: 8%;
   margin-top: 3%;
+  justify-content: space-around;
 }
 
 .footer > div {
   padding-bottom: 3%;
+  flex-direction: row;
+  
 }
 
 /*------------------IMAGE CURTAIN ----------*/
@@ -350,9 +389,9 @@ body.dark{
 
 .curtain3 {
   position: absolute;
-  top: 205%;
+  top:215%;
   right: 15%;
-  bottom: -205%;
+  bottom: -215%;
   left: 15%;
 }
 
@@ -385,7 +424,7 @@ body.dark{
   position: absolute;
   top: 315%;
   right: 15%;
-  bottom: -315%;
+  bottom: -335%;
   left: 15%;
 }
 
