@@ -1,20 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Yeseva+One&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #F4EFE2;}
+    background-color: #F4EFE2;
+    font-family: 'Noto Sans', sans-serif;
+}
 
 header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 header > h1{
     margin-right: 50%;
+    margin-top: 1%;
+}
+
+header > div {
+    margin-left: 1%;
+}
+
+header > div > a {
+    text-decoration: none;
+    color: black;
 }
 
 .container{
@@ -23,8 +39,16 @@ header > h1{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.image{
+    margin-top: 5%;
+}
 
+.image > img {
+    width: 50rem;
+    height: auto;
+}
 .text-container{
     margin-top: 10%;
     margin-bottom: 10%;
+    font-size: 1.5em;
 }

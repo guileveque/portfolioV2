@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Yeseva+One&display=swap');
 /*
-phto des projets
+phto des projets (sauf pie)
 link tout les liens
 contenue des projets
 photo du about
+about contenue
 
 */
 
@@ -302,6 +303,11 @@ body.dark{
   border-bottom: solid 1px black ;
 }
 
+.text-decoration_other{
+  text-decoration: none;
+  color: black;
+}
+
 
 .hidden-img{
   position: absolute;
@@ -314,7 +320,7 @@ body.dark{
   width: 40%;
   height: 50%;
 }
-.hidden-text:hover ~ .hidden-img {
+.text-decoration_other:hover ~ .hidden-img {
   display: block;
   position: absolute;
     z-index: 2
@@ -330,7 +336,14 @@ body.dark{
 .footer > div {
   padding-bottom: 3%;
   flex-direction: row;
-  
+}
+.footer > div > a {
+  text-decoration: none;
+  color: black;
+}
+.footer_back-top{
+  text-decoration: none;
+  color: black;
 }
 
 /*------------------IMAGE CURTAIN ----------*/

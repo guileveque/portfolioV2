@@ -129,6 +129,16 @@ body{
 }
 #hard_skills{
   margin-bottom: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#hard_skills > div > img {
+  width: 8rem;
+  height: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 #soft_skills{
@@ -195,6 +205,11 @@ body{
   .gg{
       height: 500px;
   }
+  .footer_back-top{
+    text-decoration: none;
+    color: black;
+  }
+  
 
   @media only screen and (max-width: 1000px) {
     .home {
