@@ -115,6 +115,10 @@ body{
   padding-top: 20%;
 }
 
+#about_description-text {
+  font-size: 1.5em;
+}
+
 #title-about{
   font-size: 70px;
   margin-bottom: 5%;
@@ -142,7 +146,16 @@ body{
 }
 
 #soft_skills{
-  margin-bottom: 30%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#soft_skills > div > img{
+  width: 8rem;
+  height: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .footer{
@@ -162,16 +175,31 @@ body{
   .slide-bar{
     margin-top: 10%;
       width: auto;
-      height: 97vh;
+      height: 96vh;/*93.2*/
       z-index: 1;
       font-size: x-large;
       /*position: absolute;*/
       top: 0;
       left: 1%;
   }
+
+  @media screen and (max-width: 600px) {
+    .slide-bar{
+      height: 93.2vh;
+    }
+  }
   .no-sticky{
       padding-top: 15%;
       height: auto;
+  }
+  .no-sticky > img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  }
+
+  .sticky > img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
   }
   
   .sticky {

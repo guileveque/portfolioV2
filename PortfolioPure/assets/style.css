@@ -314,6 +314,8 @@ body.dark{
   right: 35%;
   display: none;
   opacity: 0.6;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 #image-dimension{
@@ -377,6 +379,11 @@ body.dark{
 
 .curtain2 img {
   display: none;
+  
+}
+.curtain2 > img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 /*-----------------IMAGE CURTAIN 3 ---------*/
